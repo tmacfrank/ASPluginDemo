@@ -1,0 +1,13 @@
+#if (${PACKAGE_NAME} != "")
+package ${PACKAGE_NAME};
+#end
+#if (${INTERFACES} != "")
+import java.io.Serializable;
+#end
+
+public class ${NAME} ${INTERFACES} {
+#if (${INTERFACES} != "")
+private static final long serialVersionUID = 1L;
+#end
+
+}
